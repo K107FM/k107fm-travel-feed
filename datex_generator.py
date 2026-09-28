@@ -61,25 +61,13 @@ for record in root.findall(".//d2:situationRecord", ns):
 
     if any(term.lower() in record_text.lower() for term in FIFE_TERMS):
 
-        road = ""
-        location = ""
+        print("========================================")
+        print("MATCHED RECORD")
+        print("========================================")
+        print(record_text[:10000])
+        print("========================================")
+
         description = "Traffic incident"
-
-        road_node = record.find(
-            ".//d2:ilc/d2:descriptor/d2:values/d2:value",
-            ns
-        )
-
-        if road_node is not None and road_node.text:
-            road = road_node.text.strip()
-
-        location_node = record.find(
-            ".//d2:otherName/d2:descriptor/d2:values/d2:value",
-            ns
-        )
-
-        if location_node is not None and location_node.text:
-            location = location_node.text.strip()
 
         comment_node = record.find(
             ".//d2:generalPublicComment/d2:comment/d2:values/d2:value",
@@ -89,22 +77,7 @@ for record in root.findall(".//d2:situationRecord", ns):
         if comment_node is not None and comment_node.text:
             description = comment_node.text.strip()
 
-        if road and location:
-            title = f"{road} - {location}"
-        elif road:
-            title = road
-        elif location:
-            title = location
-        else:
-            title = "Fife Traffic Alert"
-
-        print("TITLE:", title)
-        print("ROAD:", road)
-        print("LOCATION:", location)
-        print("DESCRIPTION:", description)
-        print("----------------------------")
-
-        items.append((title, description))
+        items.append(("Fife Traffic Alert", description))
 
 rss_items = ""
 
@@ -133,7 +106,6 @@ else:
 rss = f"""<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
 <channel>
-
 <title>K107FM Fife Travel Alerts</title>
 <link>https://k107fm.github.io/k107fm-travel-feed/</link>
 <description>Live Traffic Scotland updates for Fife</description>
