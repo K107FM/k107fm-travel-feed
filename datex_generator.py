@@ -15,4 +15,3 @@ response = requests.get(
 
 print("Status Code:", response.status_code)
 print(response.text[:500])
-`
