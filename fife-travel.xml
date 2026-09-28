@@ -8,9 +8,15 @@
 
 
 <item>
-<title>No major incidents reported</title>
-<description>No significant delays currently reported on key Fife routes.</description>
-<guid>fallback</guid>
+<title>M90 Halbeath</title>
+<description>The M90 southbound at J3 Halbeath is closed for essential planned roadworks.  Diversions are in place.</description>
+<guid>1</guid>
+</item>
+
+<item>
+<title>A985</title>
+<description>All lanes closed in both directions</description>
+<guid>2</guid>
 </item>
 
 
