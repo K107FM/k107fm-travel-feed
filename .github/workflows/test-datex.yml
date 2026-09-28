@@ -31,4 +31,3 @@ jobs:
         with:
           name: fife-rss
           path: fife-travel.xml
-``
