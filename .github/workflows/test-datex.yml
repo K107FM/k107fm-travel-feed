@@ -31,3 +31,6 @@ jobs:
         with:
           name: sample-datex
           path: sample_datex.xml
+
+      - name: Upload RSS
+        uses
