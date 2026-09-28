@@ -98,6 +98,12 @@ for record in root.findall(".//d2:situationRecord", ns):
         else:
             title = "Fife Traffic Alert"
 
+        print("TITLE:", title)
+        print("ROAD:", road)
+        print("LOCATION:", location)
+        print("DESCRIPTION:", description)
+        print("----------------------------")
+
         items.append((title, description))
 
 rss_items = ""
