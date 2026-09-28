@@ -1,18 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0">
-<channel>
-
-<title>K107FM Fife Travel Alerts</title>
-
-<link>https://k107fm.github.io/k107fm-travel-feed/</link>
-
-<description>Live Traffic Scotland updates for Fife</description>
-
-<item>
-<title>No major incidents reported</title>
-<description>No significant delays currently reported on key Fife routes.</description>
-<guid>fallback</guid>
-</item>
-
-</channel>
-</rss>
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>K107FM Fife Travel Alerts</title><link>https://k107fm.github.io/k107fm-travel-feed/</link><description>Live Traffic Scotland updates for Fife</description><item><title>No major incidents reported</title><description>No significant delays currently reported on key Fife routes.</description><guid>fallback</guid></item></channel></rss>
