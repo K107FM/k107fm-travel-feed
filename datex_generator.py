@@ -75,20 +75,4 @@ rss_items = ""
 if len(items) == 0:
     rss_items = """
 <item>
-<title>No major incidents reported</title>
-<description>No significant delays currently reported on key Fife routes.</description>
-<guid>fallback</guid>
-</item>
-"""
-else:
-    for i, (title, description) in enumerate(items[:20], start=1):
-        rss_items += f"""
-<item>
-<title>{title}</title>
-<description>{description}</description>
-<guid>{i}</guid>
-</item>
-"""
-
-rss = f"""<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0
+<title>No 
