@@ -61,7 +61,7 @@ for record in root.findall(".//d2:situationRecord", ns):
 
     if any(term.lower() in record_text.lower() for term in FIFE_TERMS):
 
-        road = "Fife Traffic Alert"
+        road = ""
         location = ""
         description = "Traffic incident"
 
@@ -71,7 +71,7 @@ for record in root.findall(".//d2:situationRecord", ns):
         )
 
         if road_node is not None and road_node.text:
-            road = road_node.text
+            road = road_node.text.strip()
 
         location_node = record.find(
             ".//d2:otherName/d2:descriptor/d2:values/d2:value",
@@ -79,7 +79,7 @@ for record in root.findall(".//d2:situationRecord", ns):
         )
 
         if location_node is not None and location_node.text:
-            location = location_node.text
+            location = location_node.text.strip()
 
         comment_node = record.find(
             ".//d2:generalPublicComment/d2:comment/d2:values/d2:value",
@@ -89,16 +89,20 @@ for record in root.findall(".//d2:situationRecord", ns):
         if comment_node is not None and comment_node.text:
             description = comment_node.text.strip()
 
-        title = road
-
-        if location:
+        if road and location:
             title = f"{road} - {location}"
+        elif road:
+            title = road
+        elif location:
+            title = location
+        else:
+            title = "Fife Traffic Alert"
 
         items.append((title, description))
 
 rss_items = ""
 
-if len(items) == 0:
+if not items:
 
     rss_items = """
 <item>
