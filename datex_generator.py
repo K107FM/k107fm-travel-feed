@@ -36,4 +36,48 @@ response = requests.get(
 response.raise_for_status()
 
 ns = {
-    "
+    "d2": "http://datex2.eu/schema/2/2_0"
+}
+
+root = ET.fromstring(response.text)
+
+items = []
+
+for record in root.findall(".//d2:situationRecord", ns):
+
+    xml_text = ET.tostring(record, encoding="unicode")
+
+    if any(term.lower() in xml_text.lower() for term in FIFE_TERMS):
+
+        comment = "Traffic incident"
+
+        comment_node = record.find(
+            ".//d2:generalPublicComment/d2:comment/d2:values/d2:value",
+            ns
+        )
+
+        if comment_node is not None and comment_node.text:
+            comment = comment_node.text
+
+        road = "Fife Traffic Alert"
+
+        road_node = record.find(
+            ".//d2:ilc/d2:descriptor/d2:values/d2:value",
+            ns
+        )
+
+        if road_node is not None and road_node.text:
+            road = road_node.text
+
+        items.append((road, comment))
+
+rss_items = ""
+
+if len(items) == 0:
+    rss_items = """
+<item>
+<title>No major incidents reported</title>
+<description>No significant delays currently reported on key Fife routes.</description>
+<guid>fallback</guid>
+</item>
+"""
