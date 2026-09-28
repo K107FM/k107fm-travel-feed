@@ -9,8 +9,14 @@
 
 <item>
 <title>Fife Traffic Alert</title>
-<description>3 lanes restricted Southbound</description>
+<description>2 lanes restricted Southbound</description>
 <guid>1</guid>
+</item>
+
+<item>
+<title>Fife Traffic Alert</title>
+<description>2 lanes restricted Northbound</description>
+<guid>2</guid>
 </item>
 
 
