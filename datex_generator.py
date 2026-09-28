@@ -13,5 +13,10 @@ response = requests.get(
     timeout=30
 )
 
-print("Status Code:", response.status_code)
-print(response.text[:500])
+response.raise_for_status()
+
+with open("sample_datex.xml", "w", encoding="utf-8") as f:
+    f.write(response.text)
+
+print("Saved sample_datex.xml")
+print("Length:", len(response.text))
