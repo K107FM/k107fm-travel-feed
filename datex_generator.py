@@ -61,12 +61,6 @@ for record in root.findall(".//d2:situationRecord", ns):
 
     if any(term.lower() in record_text.lower() for term in FIFE_TERMS):
 
-        print("========================================")
-        print("MATCHED RECORD")
-        print("========================================")
-        print(record_text[:10000])
-        print("========================================")
-
         description = "Traffic incident"
 
         comment_node = record.find(
@@ -77,7 +71,26 @@ for record in root.findall(".//d2:situationRecord", ns):
         if comment_node is not None and comment_node.text:
             description = comment_node.text.strip()
 
-        items.append(("Fife Traffic Alert", description))
+        locations = []
+
+        for value in record.findall(
+            ".//d2:name/d2:descriptor/d2:values/d2:value",
+            ns
+        ):
+            if value.text:
+                locations.append(value.text.strip())
+
+        title = "Fife Traffic Alert"
+
+        for location in locations:
+            if "(" in location:
+                title = location
+                break
+
+        if title == "Fife Traffic Alert" and locations:
+            title = locations[0]
+
+        items.append((title, description))
 
 rss_items = ""
 
@@ -106,6 +119,7 @@ else:
 rss = f"""<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
 <channel>
+
 <title>K107FM Fife Travel Alerts</title>
 <link>https://k107fm.github.io/k107fm-travel-feed/</link>
 <description>Live Traffic Scotland updates for Fife</description>
