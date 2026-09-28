@@ -8,13 +8,13 @@
 
 
 <item>
-<title>M90 Queensferry (North)</title>
-<description>4 lanes restricted Southbound</description>
+<title>M90 Ferrytoll</title>
+<description>3 lanes restricted Southbound</description>
 <guid>1</guid>
 </item>
 
 <item>
-<title>M90 Ferrytoll (North)</title>
+<title>M90 Ferrytoll</title>
 <description>2 lanes restricted Northbound</description>
 <guid>2</guid>
 </item>
