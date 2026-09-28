@@ -14,4 +14,4 @@ response = requests.get(
 )
 
 print("Status Code:", response.status_code)
-print(response.text[:1000])
+print(response.text[:500])
