@@ -84,15 +84,15 @@ for record in root.findall(".//d2:situationRecord", ns):
 
         direction = description.lower()
 
-        if "southbound" in direction:
+        if "northbound" in direction:
             for location in locations:
-                if "(South)" in location:
+                if "(North)" in location:
                     title = location
                     break
 
-        elif "northbound" in direction:
+        elif "southbound" in direction:
             for location in locations:
-                if "(North)" in location:
+                if "(South)" in location:
                     title = location
                     break
 
