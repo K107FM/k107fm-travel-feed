@@ -139,4 +139,3 @@ with open("fife-travel.xml", "w", encoding="utf-8") as f:
 
 print("RSS updated")
 print("Items found:", len(items))
-`
