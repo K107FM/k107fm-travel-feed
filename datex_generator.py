@@ -93,3 +93,17 @@ else:
 rss = (
     '<?xml version="1.0" encoding="UTF-8"?>'
     '<rss version="2.0">'
+    '<channel>'
+    '<title>K107FM Fife Travel Alerts</title>'
+    '<link>https://k107fm.github.io/k107fm-travel-feed/</link>'
+    '<description>Live Traffic Scotland updates for Fife</description>'
+    + rss_items +
+    '</channel>'
+    '</rss>'
+)
+
+with open("fife-travel.xml", "w", encoding="utf-8") as f:
+    f.write(rss)
+
+print("RSS updated")
+print("Items found:", len(items))
