@@ -26,11 +26,9 @@ jobs:
       - name: Run script
         run: python datex_generator.py
 
-      - name: Upload DATEX XML
+      - name: Upload RSS
         uses: actions/upload-artifact@v4
         with:
-          name: sample-datex
-          path: sample_datex.xml
-
-      - name: Upload RSS
-        uses
+          name: fife-rss
+          path: fife-travel.xml
+``
