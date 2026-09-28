@@ -82,28 +82,20 @@ for record in root.findall(".//d2:situationRecord", ns):
 
         title = "Fife Traffic Alert"
 
-        direction = description.lower()
+        # Prefer named locations such as:
+        # M90 Ferrytoll (North)
+        # M90 Ferrytoll (South)
 
-        if "northbound" in direction:
-            for location in locations:
-                if "(North)" in location:
-                    title = location
-                    break
+        preferred_locations = [
+            location
+            for location in locations
+            if "(" in location
+        ]
 
-        elif "southbound" in direction:
-            for location in locations:
-                if "(South)" in location:
-                    title = location
-                    break
-
-        if title == "Fife Traffic Alert":
-            for location in locations:
-                if "(" in location:
-                    title = location
-                    break
-
-        if title == "Fife Traffic Alert" and locations:
-            title = locations[0]
+        if preferred_locations:
+            title = preferred_locations[-1]
+        elif locations:
+            title = locations[-1]
 
         items.append((title, description))
 
