@@ -45,10 +45,59 @@ items = []
 
 for record in root.findall(".//d2:situationRecord", ns):
 
-    text = ET.tostring(record, encoding="unicode")
+    xml_text = ET.tostring(record, encoding="unicode")
 
-    if any(term.lower() in text.lower() for term in FIFE_TERMS):
+    if any(term.lower() in xml_text.lower() for term in FIFE_TERMS):
 
         comment = "Traffic incident"
 
-        comment
+        comment_node = record.find(
+            ".//d2:generalPublicComment/d2:comment/d2:values/d2:value",
+            ns
+        )
+
+        if comment_node is not None and comment_node.text:
+            comment = comment_node.text
+
+        road = "Fife Traffic Alert"
+
+        road_node = record.find(
+            ".//d2:ilc/d2:descriptor/d2:values/d2:value",
+            ns
+        )
+
+        if road_node is not None and road_node.text:
+            road = road_node.text
+
+        items.append((road, comment))
+
+rss_items = ""
+
+for i, (title, description) in enumerate(items[:10], start=1):
+    rss_items += f"""
+<item>
+<title>{title}</title>
+<description>{description}</description>
+<guid>{i}</guid>
+</item>
+"""
+
+rss = f"""<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+
+<title>K107FM Fife Travel Alerts</title>
+<link>https://k107fm.github.io/k107fm-travel-feed/</link>
+<description>Live Traffic Scotland updates for Fife</description>
+
+{rss_items}
+
+</channel>
+</rss>
+"""
+
+with open("fife-travel.xml", "w", encoding="utf-8") as f:
+    f.write(rss)
+
+print("RSS file written")
+print("Items found:", len(items))
