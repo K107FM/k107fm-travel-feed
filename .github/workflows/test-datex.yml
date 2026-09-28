@@ -30,4 +30,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: fife-rss
-          path: fife-travel.xml
+          path: ./fife-travel.xml
