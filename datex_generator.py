@@ -73,6 +73,23 @@ for record in root.findall(".//d2:situationRecord", ns):
 rss_items = ""
 
 if len(items) == 0:
-    rss_items = """
-<item>
-<title>No 
+    rss_items = (
+        "<item>"
+        "<title>No major incidents reported</title>"
+        "<description>No significant delays currently reported on key Fife routes.</description>"
+        "<guid>fallback</guid>"
+        "</item>"
+    )
+else:
+    for i, (title, description) in enumerate(items[:20], start=1):
+        rss_items += (
+            f"<item>"
+            f"<title>{title}</title>"
+            f"<description>{description}</description>"
+            f"<guid>{i}</guid>"
+            f"</item>"
+        )
+
+rss = (
+    '<?xml version="1.0" encoding="UTF-8"?>'
+    '<rss version="2.0">'
