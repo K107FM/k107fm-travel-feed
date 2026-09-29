@@ -9,32 +9,24 @@
 
 <item>
 <title>M90 Admiralty</title>
-<description>1 lane restricted Southbound</description>
+<description><![CDATA[🟢 Minor traffic restriction
+
+• 1 lane restricted Southbound
+• 3 lanes restricted Southbound
+
+Updated: 08:02]]></description>
 <guid>1</guid>
 </item>
 
 <item>
-<title>M90 Admiralty</title>
-<description>3 lanes restricted Southbound</description>
+<title>M90 Junction 1A</title>
+<description><![CDATA[🟠 Traffic restrictions
+
+• 2 lanes restricted Southbound
+• 2 lanes restricted Eastbound
+
+Updated: 08:02]]></description>
 <guid>2</guid>
-</item>
-
-<item>
-<title>J1a</title>
-<description>2 lanes restricted Southbound</description>
-<guid>3</guid>
-</item>
-
-<item>
-<title>J1a</title>
-<description>2 lanes restricted Southbound</description>
-<guid>4</guid>
-</item>
-
-<item>
-<title>J1a</title>
-<description>2 lanes restricted Eastbound</description>
-<guid>5</guid>
 </item>
 
 
