@@ -113,6 +113,7 @@ for record in root.findall(".//d2:situationRecord", ns):
 
     locations = []
 
+    # Existing location extraction
     for value in record.findall(
         ".//d2:name/d2:descriptor/d2:values/d2:value",
         ns
@@ -120,13 +121,37 @@ for record in root.findall(".//d2:situationRecord", ns):
         if value.text:
             locations.append(value.text.strip())
 
+    # Additional DATEX location extraction
+    for value in record.findall(
+        ".//d2:otherName/d2:descriptor/d2:values/d2:value",
+        ns
+    ):
+        if value.text:
+            locations.append(value.text.strip())
+
     title = "Fife Traffic Alert"
 
+    # Ferrytoll
     for location in locations:
         if "Ferrytoll" in location:
             title = "M90 Ferrytoll"
             break
 
+    # Scotstoun
+    if title == "Fife Traffic Alert":
+        for location in locations:
+            if "Scotstoun" in location:
+                title = "M90 Scotstoun"
+                break
+
+    # B800 underpass
+    if title == "Fife Traffic Alert":
+        for location in locations:
+            if "B800" in location:
+                title = "M90 B800 Underpass"
+                break
+
+    # Standard mappings
     if title == "Fife Traffic Alert":
 
         for location in locations:
@@ -141,6 +166,7 @@ for record in root.findall(".//d2:situationRecord", ns):
                 title = clean_location
                 break
 
+    # Final fallback
     if title == "Fife Traffic Alert" and locations:
         title = locations[0]
 
@@ -158,37 +184,6 @@ for record in root.findall(".//d2:situationRecord", ns):
         direction = "Westbound"
 
     group_key = f"{title} ({direction})"
-
-    #
-    # DEBUG UNKNOWN LOCATIONS
-    #
-    if title == "Fife Traffic Alert":
-
-        print("\n" + "=" * 80)
-        print("UNKNOWN LOCATION FOUND")
-        print("=" * 80)
-
-        print("Description:")
-        print(description)
-
-        print("\nDirection:")
-        print(direction)
-
-        print("\nLanes Restricted:")
-        print(lanes)
-
-        print("\nLocations Extracted:")
-
-        if locations:
-            for loc in locations:
-                print(" -", loc)
-        else:
-            print("No locations found")
-
-        print("\nXML SNIPPET:")
-        print(record_text[:5000])
-
-        print("=" * 80 + "\n")
 
     dedupe_key = (group_key, description)
 
