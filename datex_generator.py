@@ -1,7 +1,9 @@
 import os
 import requests
 import xml.etree.ElementTree as ET
+from collections import defaultdict
 from requests.auth import HTTPBasicAuth
+from datetime import datetime
 
 CLIENT_ID = os.environ["CLIENT_ID"]
 CLIENT_KEY = os.environ["CLIENT_KEY"]
@@ -37,6 +39,13 @@ FIFE_TERMS = [
     "Forth Road Bridge"
 ]
 
+LOCATION_MAP = {
+    "J1a": "M90 Junction 1A",
+    "J1": "M90 Junction 1",
+    "J2": "M90 Junction 2",
+    "J3": "M90 Junction 3 Halbeath"
+}
+
 url = "https://datex2.trafficscotland.org/rest/2.3/publications/UnplannedEvents/Content.xml"
 
 response = requests.get(
@@ -53,57 +62,113 @@ ns = {
 
 root = ET.fromstring(response.text)
 
-items = []
+grouped = defaultdict(list)
+seen = set()
 
 for record in root.findall(".//d2:situationRecord", ns):
 
     record_text = ET.tostring(record, encoding="unicode")
 
-    if any(term.lower() in record_text.lower() for term in FIFE_TERMS):
+    if not any(term.lower() in record_text.lower() for term in FIFE_TERMS):
+        continue
 
-        description = "Traffic incident"
+    description = "Traffic restriction"
 
-        comment_node = record.find(
-            ".//d2:generalPublicComment/d2:comment/d2:values/d2:value",
-            ns
-        )
+    comment_node = record.find(
+        ".//d2:generalPublicComment/d2:comment/d2:values/d2:value",
+        ns
+    )
 
-        if comment_node is not None and comment_node.text:
-            description = comment_node.text.strip()
+    if comment_node is not None and comment_node.text:
+        description = comment_node.text.strip()
 
-        locations = []
+    version_node = record.find(
+        ".//d2:situationRecordVersionTime",
+        ns
+    )
 
-        for value in record.findall(
-            ".//d2:name/d2:descriptor/d2:values/d2:value",
-            ns
-        ):
-            if value.text:
-                locations.append(value.text.strip())
+    updated_time = ""
 
-        title = "Fife Traffic Alert"
+    if version_node is not None and version_node.text:
+        try:
+            dt = datetime.fromisoformat(
+                version_node.text.replace("Z", "+00:00")
+            )
+            updated_time = dt.strftime("%H:%M")
+        except Exception:
+            pass
 
-        # Prefer Ferrytoll naming
+    lanes_node = record.find(
+        ".//d2:numberOfLanesRestricted",
+        ns
+    )
+
+    lanes = 0
+
+    if lanes_node is not None and lanes_node.text:
+        try:
+            lanes = int(lanes_node.text)
+        except Exception:
+            lanes = 0
+
+    if lanes >= 3:
+        severity = "🔴 Major traffic restrictions"
+    elif lanes >= 2:
+        severity = "🟠 Traffic restrictions"
+    elif lanes == 1:
+        severity = "🟢 Minor traffic restriction"
+    else:
+        severity = "🟠 Traffic restriction"
+
+    locations = []
+
+    for value in record.findall(
+        ".//d2:name/d2:descriptor/d2:values/d2:value",
+        ns
+    ):
+        if value.text:
+            locations.append(value.text.strip())
+
+    title = "Fife Traffic Alert"
+
+    for location in locations:
+        if "Ferrytoll" in location:
+            title = "M90 Ferrytoll"
+            break
+
+    if title == "Fife Traffic Alert":
+
         for location in locations:
-            if "Ferrytoll" in location:
-                title = "M90 Ferrytoll"
+
+            clean_location = location.split(" (")[0]
+
+            if clean_location in LOCATION_MAP:
+                title = LOCATION_MAP[clean_location]
                 break
 
-        # Fallback to named locations without direction suffix
-        if title == "Fife Traffic Alert":
-            for location in locations:
-                if "(" in location:
-                    title = location.split(" (")[0]
-                    break
+            if "(" in location:
+                title = clean_location
+                break
 
-        # Last resort
-        if title == "Fife Traffic Alert" and locations:
-            title = locations[0]
+    if title == "Fife Traffic Alert" and locations:
+        title = locations[0]
 
-        items.append((title, description))
+    dedupe_key = (title, description)
+
+    if dedupe_key in seen:
+        continue
+
+    seen.add(dedupe_key)
+
+    grouped[title].append({
+        "description": description,
+        "severity": severity,
+        "updated": updated_time
+    })
 
 rss_items = ""
 
-if not items:
+if not grouped:
 
     rss_items = """
 <item>
@@ -115,15 +180,41 @@ if not items:
 
 else:
 
-    for i, (title, description) in enumerate(items[:20], start=1):
+    counter = 1
+
+    for location, incidents in grouped.items():
+
+        severity = incidents[0]["severity"]
+
+        descriptions = []
+
+        latest_update = ""
+
+        for incident in incidents:
+
+            descriptions.append(
+                f"• {incident['description']}"
+            )
+
+            if incident["updated"]:
+                latest_update = incident["updated"]
+
+        full_description = severity + "\n\n"
+
+        full_description += "\n".join(descriptions)
+
+        if latest_update:
+            full_description += f"\n\nUpdated: {latest_update}"
 
         rss_items += f"""
 <item>
-<title>{title}</title>
-<description>{description}</description>
-<guid>{i}</guid>
+<title>{location}</title>
+<description><![CDATA[{full_description}]]></description>
+<guid>{counter}</guid>
 </item>
 """
+
+        counter += 1
 
 rss = f"""<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
@@ -143,4 +234,4 @@ with open("fife-travel.xml", "w", encoding="utf-8") as f:
     f.write(rss)
 
 print("RSS updated")
-print("Items found:", len(items))
+print("Locations found:", len(grouped))
