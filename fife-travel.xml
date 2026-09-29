@@ -8,25 +8,33 @@
 
 
 <item>
-<title>M90 Admiralty</title>
-<description><![CDATA[🟢 Minor traffic restriction
+<title>M90 Ferrytoll (Southbound)</title>
+<description><![CDATA[🔴 Major traffic restrictions
 
-• 1 lane restricted Southbound
 • 3 lanes restricted Southbound
 
-Updated: 08:02]]></description>
+Updated: 08:16]]></description>
 <guid>1</guid>
 </item>
 
 <item>
-<title>M90 Junction 1A</title>
+<title>Fife Traffic Alert (Southbound)</title>
 <description><![CDATA[🟠 Traffic restrictions
 
 • 2 lanes restricted Southbound
+
+Updated: 08:10]]></description>
+<guid>2</guid>
+</item>
+
+<item>
+<title>M90 Junction 1A (Eastbound)</title>
+<description><![CDATA[🟠 Traffic restrictions
+
 • 2 lanes restricted Eastbound
 
-Updated: 08:02]]></description>
-<guid>2</guid>
+Updated: 08:17]]></description>
+<guid>3</guid>
 </item>
 
 
