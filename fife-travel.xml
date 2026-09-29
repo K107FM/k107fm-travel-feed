@@ -8,9 +8,15 @@
 
 
 <item>
-<title>No major incidents reported</title>
-<description>No significant delays currently reported on key Fife routes.</description>
-<guid>fallback</guid>
+<title>M90 Admiralty</title>
+<description>1 lane restricted Southbound</description>
+<guid>1</guid>
+</item>
+
+<item>
+<title>M90 Admiralty</title>
+<description>3 lanes restricted Southbound</description>
+<guid>2</guid>
 </item>
 
 
