@@ -21,14 +21,20 @@
 
 <item>
 <title>J1a</title>
-<description>3 lanes restricted Eastbound</description>
+<description>2 lanes restricted Southbound</description>
 <guid>3</guid>
 </item>
 
 <item>
 <title>J1a</title>
-<description>3 lanes restricted Eastbound</description>
+<description>2 lanes restricted Southbound</description>
 <guid>4</guid>
+</item>
+
+<item>
+<title>J1a</title>
+<description>2 lanes restricted Eastbound</description>
+<guid>5</guid>
 </item>
 
 
