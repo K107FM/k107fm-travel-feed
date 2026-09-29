@@ -122,13 +122,11 @@ for record in root.findall(".//d2:situationRecord", ns):
 
     title = "Fife Traffic Alert"
 
-    # Special handling for Ferrytoll
     for location in locations:
         if "Ferrytoll" in location:
             title = "M90 Ferrytoll"
             break
 
-    # Use cleaner location names
     if title == "Fife Traffic Alert":
 
         for location in locations:
@@ -146,7 +144,6 @@ for record in root.findall(".//d2:situationRecord", ns):
     if title == "Fife Traffic Alert" and locations:
         title = locations[0]
 
-    # Determine direction
     direction = "General"
 
     description_lower = description.lower()
@@ -161,6 +158,37 @@ for record in root.findall(".//d2:situationRecord", ns):
         direction = "Westbound"
 
     group_key = f"{title} ({direction})"
+
+    #
+    # DEBUG UNKNOWN LOCATIONS
+    #
+    if title == "Fife Traffic Alert":
+
+        print("\n" + "=" * 80)
+        print("UNKNOWN LOCATION FOUND")
+        print("=" * 80)
+
+        print("Description:")
+        print(description)
+
+        print("\nDirection:")
+        print(direction)
+
+        print("\nLanes Restricted:")
+        print(lanes)
+
+        print("\nLocations Extracted:")
+
+        if locations:
+            for loc in locations:
+                print(" -", loc)
+        else:
+            print("No locations found")
+
+        print("\nXML SNIPPET:")
+        print(record_text[:5000])
+
+        print("=" * 80 + "\n")
 
     dedupe_key = (group_key, description)
 
@@ -254,3 +282,8 @@ with open("fife-travel.xml", "w", encoding="utf-8") as f:
 
 print("RSS updated")
 print("Locations found:", len(grouped))
+
+print("\nGenerated groups:")
+
+for group_name in grouped.keys():
+    print(" -", group_name)
