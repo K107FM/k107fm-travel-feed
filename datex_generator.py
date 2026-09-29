@@ -111,15 +111,6 @@ for record in root.findall(".//d2:situationRecord", ns):
         except Exception:
             lanes = 0
 
-    if lanes >= 3:
-        severity = "🔴 Major traffic restrictions"
-    elif lanes >= 2:
-        severity = "🟠 Traffic restrictions"
-    elif lanes == 1:
-        severity = "🟢 Minor traffic restriction"
-    else:
-        severity = "🟠 Traffic restriction"
-
     locations = []
 
     for value in record.findall(
@@ -131,11 +122,13 @@ for record in root.findall(".//d2:situationRecord", ns):
 
     title = "Fife Traffic Alert"
 
+    # Special handling for Ferrytoll
     for location in locations:
         if "Ferrytoll" in location:
             title = "M90 Ferrytoll"
             break
 
+    # Use cleaner location names
     if title == "Fife Traffic Alert":
 
         for location in locations:
@@ -153,16 +146,32 @@ for record in root.findall(".//d2:situationRecord", ns):
     if title == "Fife Traffic Alert" and locations:
         title = locations[0]
 
-    dedupe_key = (title, description)
+    # Determine direction
+    direction = "General"
+
+    description_lower = description.lower()
+
+    if "southbound" in description_lower:
+        direction = "Southbound"
+    elif "northbound" in description_lower:
+        direction = "Northbound"
+    elif "eastbound" in description_lower:
+        direction = "Eastbound"
+    elif "westbound" in description_lower:
+        direction = "Westbound"
+
+    group_key = f"{title} ({direction})"
+
+    dedupe_key = (group_key, description)
 
     if dedupe_key in seen:
         continue
 
     seen.add(dedupe_key)
 
-    grouped[title].append({
+    grouped[group_key].append({
         "description": description,
-        "severity": severity,
+        "lanes": lanes,
         "updated": updated_time
     })
 
@@ -184,10 +193,21 @@ else:
 
     for location, incidents in grouped.items():
 
-        severity = incidents[0]["severity"]
+        max_lanes = max(
+            incident["lanes"]
+            for incident in incidents
+        )
+
+        if max_lanes >= 3:
+            severity = "🔴 Major traffic restrictions"
+        elif max_lanes >= 2:
+            severity = "🟠 Traffic restrictions"
+        elif max_lanes == 1:
+            severity = "🟢 Minor traffic restriction"
+        else:
+            severity = "🟠 Traffic restriction"
 
         descriptions = []
-
         latest_update = ""
 
         for incident in incidents:
@@ -200,7 +220,6 @@ else:
                 latest_update = incident["updated"]
 
         full_description = severity + "\n\n"
-
         full_description += "\n".join(descriptions)
 
         if latest_update:
