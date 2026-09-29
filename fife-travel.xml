@@ -8,23 +8,9 @@
 
 
 <item>
-<title>M90 Queensferry (Northbound)</title>
-<description><![CDATA[🔴 Major traffic restrictions
-
-• 3 lanes restricted Northbound
-
-Updated: 18:09]]></description>
-<guid>1</guid>
-</item>
-
-<item>
-<title>M90 Ferrytoll (Southbound)</title>
-<description><![CDATA[🟠 Traffic restrictions
-
-• 2 lanes restricted Southbound
-
-Updated: 18:09]]></description>
-<guid>2</guid>
+<title>No major incidents reported</title>
+<description>No significant delays currently reported on key Fife routes.</description>
+<guid>fallback</guid>
 </item>
 
 
