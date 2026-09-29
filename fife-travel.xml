@@ -19,6 +19,18 @@
 <guid>2</guid>
 </item>
 
+<item>
+<title>J1a</title>
+<description>3 lanes restricted Eastbound</description>
+<guid>3</guid>
+</item>
+
+<item>
+<title>J1a</title>
+<description>3 lanes restricted Eastbound</description>
+<guid>4</guid>
+</item>
+
 
 </channel>
 </rss>
