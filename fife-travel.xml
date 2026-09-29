@@ -8,22 +8,22 @@
 
 
 <item>
-<title>M90 Halbeath (Southbound)</title>
-<description><![CDATA[🟢 Minor traffic restriction
-
-• 1 lane closed Southbound
-
-Updated: 19:52]]></description>
-<guid>1</guid>
-</item>
-
-<item>
 <title>A876 and A985 (General)</title>
 <description><![CDATA[🟠 Traffic restriction
 
 • The A985 Kincardine Bridge is currently closed in both directions due to essential overnight roadworks.
 
 Updated: 19:43]]></description>
+<guid>1</guid>
+</item>
+
+<item>
+<title>M90 Halbeath (Southbound)</title>
+<description><![CDATA[🟠 Traffic restriction
+
+• All lanes closed Southbound
+
+Updated: 20:01]]></description>
 <guid>2</guid>
 </item>
 
