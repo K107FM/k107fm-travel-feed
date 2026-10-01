@@ -8,12 +8,12 @@
 
 
 <item>
-<title>M90 Scotstoun (Northbound)</title>
+<title>M90 Queensferry (Northbound)</title>
 <description><![CDATA[🔴 Major traffic restrictions
 
 • 3 lanes restricted Northbound
 
-Updated: 16:58]]></description>
+Updated: 17:02]]></description>
 <guid>1</guid>
 </item>
 
@@ -23,8 +23,18 @@ Updated: 16:58]]></description>
 
 • 3 lanes restricted Southbound
 
-Updated: 16:58]]></description>
+Updated: 17:10]]></description>
 <guid>2</guid>
+</item>
+
+<item>
+<title>M90 Admiralty (Southbound)</title>
+<description><![CDATA[🟢 Minor traffic restriction
+
+• 1 lane restricted Southbound
+
+Updated: 17:04]]></description>
+<guid>3</guid>
 </item>
 
 
