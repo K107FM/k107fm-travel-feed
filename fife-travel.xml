@@ -8,22 +8,22 @@
 
 
 <item>
-<title>M90 Queensferry (Northbound)</title>
-<description><![CDATA[🟠 Traffic restrictions
+<title>M90 Ferrytoll (Northbound)</title>
+<description><![CDATA[🔴 Major traffic restrictions
 
-• 2 lanes restricted Northbound
+• 3 lanes restricted Northbound
 
-Updated: 17:56]]></description>
+Updated: 18:17]]></description>
 <guid>1</guid>
 </item>
 
 <item>
 <title>M90 Admiralty (Southbound)</title>
-<description><![CDATA[🔴 Major traffic restrictions
+<description><![CDATA[🟢 Minor traffic restriction
 
-• 3 lanes restricted Southbound
+• 1 lane restricted Southbound
 
-Updated: 17:56]]></description>
+Updated: 18:17]]></description>
 <guid>2</guid>
 </item>
 
