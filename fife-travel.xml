@@ -9,11 +9,11 @@
 
 <item>
 <title>M90 Scotstoun (Northbound)</title>
-<description><![CDATA[🟠 Traffic restrictions
+<description><![CDATA[🔴 Major traffic restrictions
 
-• 2 lanes restricted Northbound
+• 3 lanes restricted Northbound
 
-Updated: 15:28]]></description>
+Updated: 15:43]]></description>
 <guid>1</guid>
 </item>
 
@@ -35,6 +35,16 @@ Updated: 14:35]]></description>
 
 Updated: 15:24]]></description>
 <guid>3</guid>
+</item>
+
+<item>
+<title>M90 Ferrytoll (Southbound)</title>
+<description><![CDATA[🔴 Major traffic restrictions
+
+• 4 lanes restricted Southbound
+
+Updated: 15:51]]></description>
+<guid>4</guid>
 </item>
 
 
