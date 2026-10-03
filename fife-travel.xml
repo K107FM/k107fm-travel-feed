@@ -8,23 +8,13 @@
 
 
 <item>
-<title>M90 Ferrytoll (Northbound)</title>
-<description><![CDATA[🟠 Traffic restrictions
+<title>M90 Admiralty (Southbound)</title>
+<description><![CDATA[🟢 Minor traffic restriction
 
-• 2 lanes restricted Northbound
+• 1 lane restricted Southbound
 
-Updated: 11:21]]></description>
+Updated: 11:37]]></description>
 <guid>1</guid>
-</item>
-
-<item>
-<title>M90 Ferrytoll (Southbound)</title>
-<description><![CDATA[🟠 Traffic restrictions
-
-• 2 lanes restricted Southbound
-
-Updated: 11:21]]></description>
-<guid>2</guid>
 </item>
 
 <item>
@@ -34,7 +24,7 @@ Updated: 11:21]]></description>
 • The M90 is currently restricted heading northbound between Junction 5 (Gairney Bridge) and Junction 6 (Kinross), due to a broken down vehicle in the live lane.
 
 Updated: 10:50]]></description>
-<guid>3</guid>
+<guid>2</guid>
 </item>
 
 
