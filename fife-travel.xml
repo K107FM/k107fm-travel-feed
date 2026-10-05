@@ -8,15 +8,23 @@
 
 
 <item>
-<title>M90 Admiralty (Southbound)</title>
+<title>M90 Ferrytoll (Southbound)</title>
 <description><![CDATA[🔴 Major traffic restrictions
 
-• 1 lane restricted Southbound
 • 3 lanes restricted Southbound
-• 1 lane closed Southbound
+
+Updated: 08:01]]></description>
+<guid>1</guid>
+</item>
+
+<item>
+<title>M90 Admiralty (Southbound)</title>
+<description><![CDATA[🟢 Minor traffic restriction
+
+• The M90 southbound at junction 1c is currently restricted, due to a broken down vehicle.
 
 Updated: 07:35]]></description>
-<guid>1</guid>
+<guid>2</guid>
 </item>
 
 
