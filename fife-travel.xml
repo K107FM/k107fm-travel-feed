@@ -8,9 +8,25 @@
 
 
 <item>
-<title>No major incidents reported</title>
-<description>No significant delays currently reported on key Fife routes.</description>
-<guid>fallback</guid>
+<title>M90 Admiralty (Southbound)</title>
+<description><![CDATA[🔴 Major traffic restrictions
+
+• 1 lane restricted Southbound
+• 3 lanes restricted Southbound
+
+Updated: 07:14]]></description>
+<guid>1</guid>
+</item>
+
+<item>
+<title>M90 Junction 1A (Eastbound)</title>
+<description><![CDATA[🔴 Major traffic restrictions
+
+• 2 lanes restricted Eastbound
+• 3 lanes restricted Eastbound
+
+Updated: 07:14]]></description>
+<guid>2</guid>
 </item>
 
 
