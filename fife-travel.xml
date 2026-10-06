@@ -9,11 +9,11 @@
 
 <item>
 <title>M90 Queensferry (Northbound)</title>
-<description><![CDATA[🟠 Traffic restrictions
+<description><![CDATA[🔴 Major traffic restrictions
 
-• 2 lanes restricted Northbound
+• 3 lanes restricted Northbound
 
-Updated: 15:59]]></description>
+Updated: 16:23]]></description>
 <guid>1</guid>
 </item>
 
@@ -23,8 +23,18 @@ Updated: 15:59]]></description>
 
 • The A92 is currently restricted eastbound between Crossgates and Cowdenbeath due to a road traffic incident.
 
-Updated: 15:59]]></description>
+Updated: 16:07]]></description>
 <guid>2</guid>
+</item>
+
+<item>
+<title>M90 Ferrytoll (Southbound)</title>
+<description><![CDATA[🔴 Major traffic restrictions
+
+• 4 lanes restricted Southbound
+
+Updated: 16:22]]></description>
+<guid>3</guid>
 </item>
 
 
