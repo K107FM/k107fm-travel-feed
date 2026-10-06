@@ -13,7 +13,7 @@
 
 • 3 lanes restricted Northbound
 
-Updated: 16:44]]></description>
+Updated: 17:00]]></description>
 <guid>1</guid>
 </item>
 
@@ -28,13 +28,33 @@ Updated: 16:07]]></description>
 </item>
 
 <item>
-<title>M90 Ferrytoll (Southbound)</title>
+<title>M90 Admiralty (Southbound)</title>
 <description><![CDATA[🔴 Major traffic restrictions
 
 • 3 lanes restricted Southbound
 
-Updated: 16:43]]></description>
+Updated: 16:59]]></description>
 <guid>3</guid>
+</item>
+
+<item>
+<title>M90 Admiralty - Slip Off (Southbound)</title>
+<description><![CDATA[🟢 Minor traffic restriction
+
+• 1 lane restricted Southbound
+
+Updated: 16:55]]></description>
+<guid>4</guid>
+</item>
+
+<item>
+<title>M90 Ferrytoll (Northbound)</title>
+<description><![CDATA[🔴 Major traffic restrictions
+
+• 3 lanes restricted Northbound
+
+Updated: 16:57]]></description>
+<guid>5</guid>
 </item>
 
 
