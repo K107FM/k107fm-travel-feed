@@ -13,7 +13,7 @@
 
 • 3 lanes restricted Northbound
 
-Updated: 16:40]]></description>
+Updated: 17:25]]></description>
 <guid>1</guid>
 </item>
 
@@ -21,11 +21,20 @@ Updated: 16:40]]></description>
 <title>M90 Admiralty (Southbound)</title>
 <description><![CDATA[🔴 Major traffic restrictions
 
-• 1 lane restricted Southbound
 • 3 lanes restricted Southbound
 
-Updated: 17:12]]></description>
+Updated: 17:39]]></description>
 <guid>2</guid>
+</item>
+
+<item>
+<title>M90 Admiralty - Slip Off (Southbound)</title>
+<description><![CDATA[🟢 Minor traffic restriction
+
+• 1 lane restricted Southbound
+
+Updated: 17:39]]></description>
+<guid>3</guid>
 </item>
 
 
