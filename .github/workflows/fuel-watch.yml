@@ -19,16 +19,21 @@ jobs:
           python << 'EOF'
           import requests
 
+          headers = {
+              "Content-Type": "application/json",
+              "Accept": "application/json"
+          }
+
+          payload = {
+              "client_id": "${FUEL_CLIENT_ID}",
+              "client_secret": "${FUEL_CLIENT_SECRET}"
+          }
+
           response = requests.post(
               "https://www.fuel-finder.service.gov.uk/api/v1/oauth/generate_access_token",
-              json={
-                  "client_id": "${FUEL_CLIENT_ID}",
-                  "client_secret": "${FUEL_CLIENT_SECRET}"
-              }
+              headers=headers,
+              json=payload
           )
 
           print("Status:", response.status_code)
           print("Headers:", dict(response.headers))
-          print("Response:", response.text)
-
-          EOF
