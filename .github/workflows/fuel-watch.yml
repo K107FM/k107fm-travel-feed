@@ -18,22 +18,10 @@ jobs:
         run: |
           python << 'EOF'
           import os
-          import requests
 
-          response = requests.post(
-              "https://www.fuel-finder.service.gov.uk/api/v1/oauth/generate_access_token",
-              headers={
-                  "Content-Type": "application/json",
-                  "Accept": "application/json"
-              },
-              json={
-                  "client_id": os.environ["FUEL_CLIENT_ID"],
-                  "client_secret": os.environ["FUEL_CLIENT_SECRET"]
-              }
-          )
-
-          print("Status:", response.status_code)
-          print("Headers:", dict(response.headers))
-          print("Response:", response.text)
+          print("Client ID exists:", bool(os.environ.get("FUEL_CLIENT_ID")))
+          print("Client Secret exists:", bool(os.environ.get("FUEL_CLIENT_SECRET")))
+          print("Client ID length:", len(os.environ.get("FUEL_CLIENT_ID", "")))
+          print("Client Secret length:", len(os.environ.get("FUEL_CLIENT_SECRET", "")))
 
           EOF
