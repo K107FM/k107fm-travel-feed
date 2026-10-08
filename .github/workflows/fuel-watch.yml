@@ -5,11 +5,9 @@ on:
 
 jobs:
   verify-secrets:
-
     runs-on: ubuntu-latest
 
     steps:
-
       - name: Check Fuel Secrets
         env:
           FUEL_CLIENT_ID: ${{ secrets.FUEL_CLIENT_ID }}
