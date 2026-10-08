@@ -28,5 +28,7 @@ jobs:
           )
 
           print("Status:", response.status_code)
-          print(response.text)
+          print("Headers:", dict(response.headers))
+          print("Response:", response.text)
+
           EOF
