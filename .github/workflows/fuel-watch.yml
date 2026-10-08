@@ -23,17 +23,17 @@ jobs:
           response = requests.post(
               "https://www.fuel-finder.service.gov.uk/api/v1/oauth/generate_access_token",
               headers={
-                  "Content-Type": "application/x-www-form-urlencoded"
+                  "Content-Type": "application/json",
+                  "Accept": "application/json"
               },
-              data={
-                  "grant_type": "client_credentials",
+              json={
                   "client_id": os.environ["FUEL_CLIENT_ID"],
-                  "client_secret": os.environ["FUEL_CLIENT_SECRET"],
-                  "scope": "fuelfinder.read"
+                  "client_secret": os.environ["FUEL_CLIENT_SECRET"]
               }
           )
 
           print("Status:", response.status_code)
+          print("Headers:", dict(response.headers))
           print("Response:", response.text)
 
           EOF
