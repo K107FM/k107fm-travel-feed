@@ -20,18 +20,16 @@ jobs:
           import os
           import requests
 
-          client_id = os.environ["FUEL_CLIENT_ID"]
-          client_secret = os.environ["FUEL_CLIENT_SECRET"]
-
           response = requests.post(
               "https://www.fuel-finder.service.gov.uk/api/v1/oauth/generate_access_token",
               headers={
-                  "Content-Type": "application/json",
-                  "Accept": "application/json"
+                  "Content-Type": "application/x-www-form-urlencoded"
               },
-              json={
-                  "client_id": client_id,
-                  "client_secret": client_secret
+              data={
+                  "grant_type": "client_credentials",
+                  "client_id": os.environ["FUEL_CLIENT_ID"],
+                  "client_secret": os.environ["FUEL_CLIENT_SECRET"],
+                  "scope": "fuelfinder.read"
               }
           )
 
