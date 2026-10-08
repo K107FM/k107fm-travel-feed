@@ -8,22 +8,22 @@
 
 
 <item>
-<title>M90 Admiralty (Southbound)</title>
+<title>M90 Ferrytoll (Southbound)</title>
 <description><![CDATA[🔴 Major traffic restrictions
 
 • 3 lanes restricted Southbound
 
-Updated: 17:53]]></description>
+Updated: 18:11]]></description>
 <guid>1</guid>
 </item>
 
 <item>
-<title>M90 Scotstoun (Northbound)</title>
-<description><![CDATA[🟠 Traffic restrictions
+<title>M90 Queensferry (Northbound)</title>
+<description><![CDATA[🔴 Major traffic restrictions
 
-• 2 lanes restricted Northbound
+• 3 lanes restricted Northbound
 
-Updated: 17:55]]></description>
+Updated: 18:14]]></description>
 <guid>2</guid>
 </item>
 
@@ -35,16 +35,6 @@ Updated: 17:55]]></description>
 
 Updated: 16:41]]></description>
 <guid>3</guid>
-</item>
-
-<item>
-<title>A92/A910 Kirkcaldy (Southbound)</title>
-<description><![CDATA[🟠 Traffic restriction
-
-• All lanes restricted Southbound
-
-Updated: 17:54]]></description>
-<guid>4</guid>
 </item>
 
 
