@@ -4,25 +4,29 @@ on:
   workflow_dispatch:
 
 jobs:
-  verify-secrets:
+  auth-test:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Check Fuel Secrets
+      - name: Install requests
+        run: pip install requests
+
+      - name: Get Fuel Finder Token
         env:
           FUEL_CLIENT_ID: ${{ secrets.FUEL_CLIENT_ID }}
           FUEL_CLIENT_SECRET: ${{ secrets.FUEL_CLIENT_SECRET }}
         run: |
-          if [ -n "$FUEL_CLIENT_ID" ]; then
-            echo "Fuel Client ID found"
-          else
-            echo "Missing Fuel Client ID"
-            exit 1
-          fi
+          python << 'EOF'
+          import requests
 
-          if [ -n "$FUEL_CLIENT_SECRET" ]; then
-            echo "Fuel Client Secret found"
-          else
-            echo "Missing Fuel Client Secret"
-            exit 1
-          fi
+          response = requests.post(
+              "https://www.fuel-finder.service.gov.uk/api/v1/oauth/generate_access_token",
+              json={
+                  "client_id": "${FUEL_CLIENT_ID}",
+                  "client_secret": "${FUEL_CLIENT_SECRET}"
+              }
+          )
+
+          print("Status:", response.status_code)
+          print(response.text)
+          EOF
