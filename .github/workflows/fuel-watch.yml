@@ -17,23 +17,25 @@ jobs:
           FUEL_CLIENT_SECRET: ${{ secrets.FUEL_CLIENT_SECRET }}
         run: |
           python << 'EOF'
+          import os
           import requests
 
-          headers = {
-              "Content-Type": "application/json",
-              "Accept": "application/json"
-          }
-
-          payload = {
-              "client_id": "${FUEL_CLIENT_ID}",
-              "client_secret": "${FUEL_CLIENT_SECRET}"
-          }
+          client_id = os.environ["FUEL_CLIENT_ID"]
+          client_secret = os.environ["FUEL_CLIENT_SECRET"]
 
           response = requests.post(
               "https://www.fuel-finder.service.gov.uk/api/v1/oauth/generate_access_token",
-              headers=headers,
-              json=payload
+              headers={
+                  "Content-Type": "application/json",
+                  "Accept": "application/json"
+              },
+              json={
+                  "client_id": client_id,
+                  "client_secret": client_secret
+              }
           )
 
           print("Status:", response.status_code)
-          print("Headers:", dict(response.headers))
+          print("Response:", response.text)
+
+          EOF
