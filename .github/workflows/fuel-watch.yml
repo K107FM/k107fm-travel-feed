@@ -1,1 +1,30 @@
+name: Fuel Watch
 
+on:
+  workflow_dispatch:
+
+jobs:
+  verify-secrets:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Check Fuel Secrets
+        env:
+          FUEL_CLIENT_ID: ${{ secrets.FUEL_CLIENT_ID }}
+          FUEL_CLIENT_SECRET: ${{ secrets.FUEL_CLIENT_SECRET }}
+        run: |
+          if [ -n "$FUEL_CLIENT_ID" ]; then
+            echo "Fuel Client ID found"
+          else
+            echo "Missing Fuel Client ID"
+            exit 1
+          fi
+
+          if [ -n "$FUEL_CLIENT_SECRET" ]; then
+            echo "Fuel Client Secret found"
+          else
+            echo "Missing Fuel Client Secret"
+            exit 1
+          fi
