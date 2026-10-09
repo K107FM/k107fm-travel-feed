@@ -8,23 +8,13 @@
 
 
 <item>
-<title>M90 Ferrytoll (Northbound)</title>
-<description><![CDATA[🔴 Major traffic restrictions
-
-• 3 lanes restricted Northbound
-
-Updated: 18:14]]></description>
-<guid>1</guid>
-</item>
-
-<item>
 <title>A92/A914 (General)</title>
 <description><![CDATA[🟠 Traffic restriction
 
 • The A92 is currently restricted between Tay Bridge and Forgan Roundabout due to a broken down vehicle.
 
 Updated: 17:09]]></description>
-<guid>2</guid>
+<guid>1</guid>
 </item>
 
 <item>
@@ -34,7 +24,7 @@ Updated: 17:09]]></description>
 • The A92 Southbound at Lochgelly is currently partially blocked due to a road traffic incident.
 
 Updated: 17:52]]></description>
-<guid>3</guid>
+<guid>2</guid>
 </item>
 
 
