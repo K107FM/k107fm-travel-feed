@@ -8,13 +8,23 @@
 
 
 <item>
-<title>M90 Admiralty (Southbound)</title>
+<title>M90 Queensferry (Northbound)</title>
+<description><![CDATA[🔴 Major traffic restrictions
+
+• 3 lanes restricted Northbound
+
+Updated: 12:46]]></description>
+<guid>1</guid>
+</item>
+
+<item>
+<title>M90 Masterton (Southbound)</title>
 <description><![CDATA[🔴 Major traffic restrictions
 
 • 3 lanes restricted Southbound
 
-Updated: 12:31]]></description>
-<guid>1</guid>
+Updated: 12:51]]></description>
+<guid>2</guid>
 </item>
 
 
