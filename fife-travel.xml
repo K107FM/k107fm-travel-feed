@@ -9,33 +9,22 @@
 
 <item>
 <title>M90 Ferrytoll (Southbound)</title>
-<description><![CDATA[🟢 Minor traffic restriction
+<description><![CDATA[🔴 Major traffic restrictions
 
 • The M90 is currently restricted southbound at Queensferry Crossing due to a road traffic incident.
 
-Updated: 18:44]]></description>
+Updated: 19:10]]></description>
 <guid>1</guid>
 </item>
 
 <item>
-<title>M90 Admiralty (Southbound)</title>
+<title>M90 Masterton (Southbound)</title>
 <description><![CDATA[🔴 Major traffic restrictions
 
 • 3 lanes restricted Southbound
-• 1 lane restricted Southbound
 
-Updated: 18:45]]></description>
+Updated: 19:00]]></description>
 <guid>2</guid>
-</item>
-
-<item>
-<title>M90 Ferrytoll (Northbound)</title>
-<description><![CDATA[🟠 Traffic restrictions
-
-• 2 lanes restricted Northbound
-
-Updated: 18:45]]></description>
-<guid>3</guid>
 </item>
 
 
