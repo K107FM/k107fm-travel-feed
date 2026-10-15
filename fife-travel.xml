@@ -8,13 +8,23 @@
 
 
 <item>
-<title>M90 Ferrytoll (Southbound)</title>
+<title>M90 Scotstoun (Southbound)</title>
+<description><![CDATA[🟢 Minor traffic restriction
+
+• M90 Southbound Junction 1 - Road is partially blocked due to a road traffic incident.
+
+Updated: 07:47]]></description>
+<guid>1</guid>
+</item>
+
+<item>
+<title>M90 Queensferry (Southbound)</title>
 <description><![CDATA[🔴 Major traffic restrictions
 
 • 3 lanes restricted Southbound
 
-Updated: 07:29]]></description>
-<guid>1</guid>
+Updated: 08:15]]></description>
+<guid>2</guid>
 </item>
 
 
