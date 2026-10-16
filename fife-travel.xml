@@ -8,33 +8,23 @@
 
 
 <item>
-<title>A92/A911 Glenrothes (Northbound)</title>
-<description><![CDATA[🟠 Traffic restriction
-
-• The A92 is currently restricted northbound between Bankhead Roundabout and Preston Roundabout due to a broken-down vehicle.
-
-Updated: 12:03]]></description>
-<guid>1</guid>
-</item>
-
-<item>
 <title>M90 Admiralty (Southbound)</title>
 <description><![CDATA[🔴 Major traffic restrictions
 
 • 3 lanes restricted Southbound
 
-Updated: 12:48]]></description>
-<guid>2</guid>
+Updated: 13:27]]></description>
+<guid>1</guid>
 </item>
 
 <item>
-<title>M90 Ferrytoll (Northbound)</title>
-<description><![CDATA[🟠 Traffic restrictions
+<title>M90 Queensferry (Northbound)</title>
+<description><![CDATA[🔴 Major traffic restrictions
 
-• 2 lanes restricted Northbound
+• 3 lanes restricted Northbound
 
-Updated: 12:16]]></description>
-<guid>3</guid>
+Updated: 13:27]]></description>
+<guid>2</guid>
 </item>
 
 
