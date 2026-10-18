@@ -8,13 +8,34 @@
 
 
 <item>
+<title>M90 Queensferry (Southbound)</title>
+<description><![CDATA[🟠 Traffic restrictions
+
+• The M90 is currently closed southbound at Junction 1a due to overnight roadworks.
+
+Updated: 22:30]]></description>
+<guid>1</guid>
+</item>
+
+<item>
+<title>M90 Queensferry - Slip On (Southbound)</title>
+<description><![CDATA[🟠 Traffic restrictions
+
+• 2 lanes closed Southbound
+
+Updated: 22:31]]></description>
+<guid>2</guid>
+</item>
+
+<item>
 <title>M90 Junction 1A (Northbound)</title>
-<description><![CDATA[🟢 Minor traffic restriction
+<description><![CDATA[🟠 Traffic restrictions
 
 • There is currently no access to the M90 northbound from the M9 eastbound at Junction 1a due to overnight roadworks.
+• There is currently no access to the M90 northbound from the M9 westbound at Junction 1a due to overnight roadworks.
 
-Updated: 21:57]]></description>
-<guid>1</guid>
+Updated: 22:15]]></description>
+<guid>3</guid>
 </item>
 
 
