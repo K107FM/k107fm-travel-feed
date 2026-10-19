@@ -8,33 +8,9 @@
 
 
 <item>
-<title>M90 Queensferry (Southbound)</title>
-<description><![CDATA[🟠 Traffic restrictions
-
-• The M90 is currently closed southbound at Junction 1a due to overnight roadworks.
-
-Updated: 22:30]]></description>
-<guid>1</guid>
-</item>
-
-<item>
-<title>M90 Queensferry - Slip On (Southbound)</title>
-<description><![CDATA[🟠 Traffic restrictions
-
-• There is currently no access to the M90 southbound at Junction 1a due to overnight roadworks
-
-Updated: 22:31]]></description>
-<guid>2</guid>
-</item>
-
-<item>
-<title>M90 Ferrytoll (Southbound)</title>
-<description><![CDATA[🔴 Major traffic restrictions
-
-• 3 lanes restricted Southbound
-
-Updated: 05:54]]></description>
-<guid>3</guid>
+<title>No major incidents reported</title>
+<description>No significant delays currently reported on key Fife routes.</description>
+<guid>fallback</guid>
 </item>
 
 
