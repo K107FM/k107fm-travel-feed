@@ -13,7 +13,7 @@
 
 • 3 lanes restricted Northbound
 
-Updated: 17:06]]></description>
+Updated: 17:36]]></description>
 <guid>1</guid>
 </item>
 
@@ -23,7 +23,7 @@ Updated: 17:06]]></description>
 
 • 2 lanes restricted Northbound
 
-Updated: 17:06]]></description>
+Updated: 17:35]]></description>
 <guid>2</guid>
 </item>
 
@@ -38,12 +38,12 @@ Updated: 16:09]]></description>
 </item>
 
 <item>
-<title>M90 Admiralty (Southbound)</title>
-<description><![CDATA[🟢 Minor traffic restriction
+<title>M90 Ferrytoll (Southbound)</title>
+<description><![CDATA[🔴 Major traffic restrictions
 
-• 1 lane restricted Southbound
+• 3 lanes restricted Southbound
 
-Updated: 17:06]]></description>
+Updated: 17:36]]></description>
 <guid>4</guid>
 </item>
 
@@ -51,9 +51,9 @@ Updated: 17:06]]></description>
 <title>A92 Crossgates (Northbound)</title>
 <description><![CDATA[🟠 Traffic restrictions
 
-• 2 lanes restricted Northbound
+• The M90 northbound sliproad at junction 2a going to the A92 is restricted due to a Police incident.
 
-Updated: 16:59]]></description>
+Updated: 17:17]]></description>
 <guid>5</guid>
 </item>
 
