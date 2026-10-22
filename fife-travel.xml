@@ -8,33 +8,9 @@
 
 
 <item>
-<title>M90 Scotstoun (Northbound)</title>
-<description><![CDATA[🔴 Major traffic restrictions
-
-• 3 lanes restricted Northbound
-
-Updated: 18:28]]></description>
-<guid>1</guid>
-</item>
-
-<item>
-<title>M90 Queensferry (Southbound)</title>
-<description><![CDATA[🔴 Major traffic restrictions
-
-• 3 lanes restricted Southbound
-
-Updated: 16:38]]></description>
-<guid>2</guid>
-</item>
-
-<item>
-<title>A92/Kilmany (General)</title>
-<description><![CDATA[🟠 Traffic restriction
-
-• A92 Kilmany - Road is partially blocked due to a road traffic incident.
-
-Updated: 17:20]]></description>
-<guid>3</guid>
+<title>No major incidents reported</title>
+<description>No significant delays currently reported on key Fife routes.</description>
+<guid>fallback</guid>
 </item>
 
 
