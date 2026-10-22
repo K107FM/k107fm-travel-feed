@@ -8,9 +8,23 @@
 
 
 <item>
-<title>No major incidents reported</title>
-<description>No significant delays currently reported on key Fife routes.</description>
-<guid>fallback</guid>
+<title>A9 / A824 (General)</title>
+<description><![CDATA[🟠 Traffic restriction
+
+• All lanes restricted in both directions
+
+Updated: 10:30]]></description>
+<guid>1</guid>
+</item>
+
+<item>
+<title>A9 / A823 (General)</title>
+<description><![CDATA[🟠 Traffic restriction
+
+• A9 (S) Auchterarder - Road closed due to a vehicle fire
+
+Updated: 10:35]]></description>
+<guid>2</guid>
 </item>
 
 
