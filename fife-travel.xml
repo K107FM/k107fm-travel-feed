@@ -8,12 +8,12 @@
 
 
 <item>
-<title>M90 Queensferry (Northbound)</title>
-<description><![CDATA[🔴 Major traffic restrictions
+<title>M90 Scotstoun (Northbound)</title>
+<description><![CDATA[🟠 Traffic restrictions
 
-• 3 lanes restricted Northbound
+• 2 lanes restricted Northbound
 
-Updated: 13:35]]></description>
+Updated: 14:21]]></description>
 <guid>1</guid>
 </item>
 
@@ -23,8 +23,18 @@ Updated: 13:35]]></description>
 
 • 3 lanes restricted Southbound
 
-Updated: 13:43]]></description>
+Updated: 14:22]]></description>
 <guid>2</guid>
+</item>
+
+<item>
+<title>A977 / A985 (Eastbound)</title>
+<description><![CDATA[🟠 Traffic restriction
+
+• The A985 Eastbound at Kincardine is partially blocked due to a road traffic incident.
+
+Updated: 13:45]]></description>
+<guid>3</guid>
 </item>
 
 
