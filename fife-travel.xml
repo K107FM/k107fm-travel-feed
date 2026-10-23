@@ -8,33 +8,23 @@
 
 
 <item>
-<title>A90 Goval E (Southbound)</title>
-<description><![CDATA[🟠 Traffic restriction
-
-• Due to an earlier vehicle fire, the A90 is closed to all southbound traffic between Blackdog to Craibstone, the on slip at Goval is also closed.
-
-Updated: 20:13]]></description>
-<guid>1</guid>
-</item>
-
-<item>
 <title>M90 Queensferry (Northbound)</title>
 <description><![CDATA[🟠 Traffic restrictions
 
 • The M90 northbound is currently closed at J1A Queensferry crossing. A planned diversion is in place.
 
 Updated: 20:15]]></description>
-<guid>2</guid>
+<guid>1</guid>
 </item>
 
 <item>
 <title>M90 Scotstoun (Northbound)</title>
-<description><![CDATA[🟠 Traffic restrictions
+<description><![CDATA[🔴 Major traffic restrictions
 
-• 2 lanes restricted Northbound
+• 3 lanes restricted Northbound
 
-Updated: 22:18]]></description>
-<guid>3</guid>
+Updated: 22:57]]></description>
+<guid>2</guid>
 </item>
 
 <item>
@@ -44,7 +34,7 @@ Updated: 22:18]]></description>
 • The A985 at Devilla is closed to all traffic in both directions, due to overnight roadworks.
 
 Updated: 22:12]]></description>
-<guid>4</guid>
+<guid>3</guid>
 </item>
 
 
