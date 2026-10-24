@@ -28,23 +28,13 @@ Updated: 14:46]]></description>
 </item>
 
 <item>
-<title>M90 Ferrytoll (Southbound)</title>
-<description><![CDATA[🔴 Major traffic restrictions
-
-• 4 lanes restricted Southbound
-
-Updated: 17:04]]></description>
-<guid>3</guid>
-</item>
-
-<item>
 <title>M90 Admiralty (Northbound)</title>
 <description><![CDATA[🔴 Major traffic restrictions
 
 • 3 lanes restricted Northbound
 
 Updated: 17:07]]></description>
-<guid>4</guid>
+<guid>3</guid>
 </item>
 
 <item>
@@ -54,16 +44,26 @@ Updated: 17:07]]></description>
 • 2 lanes restricted Southbound
 
 Updated: 17:08]]></description>
-<guid>5</guid>
+<guid>4</guid>
 </item>
 
 <item>
 <title>A977 / A985 (General)</title>
 <description><![CDATA[🟠 Traffic restriction
 
-• All lanes restricted in both directions
+• The A985 is currently restricted in both directions between Devilla Forrest and Valleyfield due to a fallen tree.
 
 Updated: 17:08]]></description>
+<guid>5</guid>
+</item>
+
+<item>
+<title>M90 Scotstoun (Northbound)</title>
+<description><![CDATA[🟠 Traffic restriction
+
+• All lanes closed Northbound
+
+Updated: 17:48]]></description>
 <guid>6</guid>
 </item>
 
