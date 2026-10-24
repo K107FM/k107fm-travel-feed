@@ -8,13 +8,33 @@
 
 
 <item>
-<title>M90 Ferrytoll (Southbound)</title>
-<description><![CDATA[🔴 Major traffic restrictions
+<title>A876 and A985 (General)</title>
+<description><![CDATA[🟠 Traffic restriction
 
-• 3 lanes restricted Southbound
+• Road users are advised to use caution crossing the A985 Kincardine Bridge due to high winds currently affecting driving conditions.
 
-Updated: 14:09]]></description>
+Updated: 14:45]]></description>
 <guid>1</guid>
+</item>
+
+<item>
+<title>A977 / A876 (General)</title>
+<description><![CDATA[🟠 Traffic restriction
+
+• All lanes restricted in both directions
+
+Updated: 14:46]]></description>
+<guid>2</guid>
+</item>
+
+<item>
+<title>A9000 Echline (Northbound)</title>
+<description><![CDATA[🟠 Traffic restrictions
+
+• 2 lanes restricted Northbound
+
+Updated: 14:46]]></description>
+<guid>3</guid>
 </item>
 
 
