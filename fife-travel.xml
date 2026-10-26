@@ -8,23 +8,33 @@
 
 
 <item>
-<title>M90 Masterton (Southbound)</title>
+<title>M90 Ferrytoll (Southbound)</title>
 <description><![CDATA[🔴 Major traffic restrictions
 
 • 3 lanes restricted Southbound
 
-Updated: 07:13]]></description>
+Updated: 08:06]]></description>
 <guid>1</guid>
 </item>
 
 <item>
-<title>M90 Admiralty (Southbound)</title>
-<description><![CDATA[🟢 Minor traffic restriction
+<title>M90 Junction 1A (Eastbound)</title>
+<description><![CDATA[🔴 Major traffic restrictions
 
-• 1 lane restricted Southbound
+• 3 lanes restricted Eastbound
 
-Updated: 07:13]]></description>
+Updated: 08:06]]></description>
 <guid>2</guid>
+</item>
+
+<item>
+<title>M90 Masterton (Northbound)</title>
+<description><![CDATA[🟠 Traffic restriction
+
+• All lanes closed Northbound
+
+Updated: 07:59]]></description>
+<guid>3</guid>
 </item>
 
 
