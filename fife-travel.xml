@@ -8,13 +8,23 @@
 
 
 <item>
-<title>M90 Queensferry (Northbound)</title>
+<title>M90 Ferrytoll (Northbound)</title>
 <description><![CDATA[🟠 Traffic restrictions
 
-• 2 lanes restricted Northbound
+• The M90 is currently restricted northbound at Queensferry Crossing due to a hazard on the carriageway.
 
-Updated: 18:07]]></description>
+Updated: 18:25]]></description>
 <guid>1</guid>
+</item>
+
+<item>
+<title>A9 / A824 (Northbound)</title>
+<description><![CDATA[🟠 Traffic restriction
+
+• The A9 is currently restricted northbound at Auchterarder due to a broken-down vehicle.
+
+Updated: 18:26]]></description>
+<guid>2</guid>
 </item>
 
 
