@@ -8,33 +8,23 @@
 
 
 <item>
-<title>M90 Ferrytoll (Southbound)</title>
-<description><![CDATA[🔴 Major traffic restrictions
-
-• 3 lanes restricted Southbound
-
-Updated: 08:06]]></description>
-<guid>1</guid>
-</item>
-
-<item>
-<title>M90 Junction 1A (Eastbound)</title>
-<description><![CDATA[🔴 Major traffic restrictions
-
-• 3 lanes restricted Eastbound
-
-Updated: 08:06]]></description>
-<guid>2</guid>
-</item>
-
-<item>
 <title>M90 Masterton (Northbound)</title>
 <description><![CDATA[🟠 Traffic restriction
 
 • All lanes closed Northbound
 
 Updated: 07:59]]></description>
-<guid>3</guid>
+<guid>1</guid>
+</item>
+
+<item>
+<title>M90 Broxden (Northbound)</title>
+<description><![CDATA[🟠 Traffic restriction
+
+• The A9 Northbound, prior to Broxden Roundabout, is currently restricted due to debris on the carriageway.
+
+Updated: 08:44]]></description>
+<guid>2</guid>
 </item>
 
 
