@@ -8,23 +8,9 @@
 
 
 <item>
-<title>M90 Masterton (Northbound)</title>
-<description><![CDATA[🟠 Traffic restriction
-
-• All lanes closed Northbound
-
-Updated: 07:59]]></description>
-<guid>1</guid>
-</item>
-
-<item>
-<title>M90 Broxden (Northbound)</title>
-<description><![CDATA[🟠 Traffic restriction
-
-• The A9 Northbound, prior to Broxden Roundabout, is currently restricted due to debris on the carriageway.
-
-Updated: 08:44]]></description>
-<guid>2</guid>
+<title>No major incidents reported</title>
+<description>No significant delays currently reported on key Fife routes.</description>
+<guid>fallback</guid>
 </item>
 
 
