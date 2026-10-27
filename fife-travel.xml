@@ -28,13 +28,33 @@ Updated: 23:44]]></description>
 </item>
 
 <item>
+<title>M90 Admiralty (Southbound)</title>
+<description><![CDATA[🟢 Minor traffic restriction
+
+• 1 lane restricted Southbound
+
+Updated: 07:03]]></description>
+<guid>3</guid>
+</item>
+
+<item>
+<title>M90 Masterton (Southbound)</title>
+<description><![CDATA[🔴 Major traffic restrictions
+
+• 3 lanes restricted Southbound
+
+Updated: 07:08]]></description>
+<guid>4</guid>
+</item>
+
+<item>
 <title>A876 and A985 (General)</title>
 <description><![CDATA[🟠 Traffic restriction
 
 • Road users are advised to use caution crossing the A985 Kincardine Bridge due to high winds currently affecting driving conditions.
 
 Updated: 00:46]]></description>
-<guid>3</guid>
+<guid>5</guid>
 </item>
 
 
