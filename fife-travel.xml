@@ -8,33 +8,13 @@
 
 
 <item>
-<title>M90 Queensferry (General)</title>
-<description><![CDATA[🟠 Traffic restrictions
-
-• The M90 is currently closed at Junction 1a due to overnight roadworks.
-
-Updated: 21:52]]></description>
-<guid>1</guid>
-</item>
-
-<item>
-<title>A9000 Forth Road Bridge (Southbound)</title>
-<description><![CDATA[🟠 Traffic restrictions
-
-• The A9000 is currently closed southbound at Forth Road Bridge due to essential overnight roadworks. Motorists are advised to follow the available signed diversion route.
-
-Updated: 23:47]]></description>
-<guid>2</guid>
-</item>
-
-<item>
 <title>M90 (General)</title>
 <description><![CDATA[🟠 Traffic restriction
 
 • Road users are advised to use caution crossing the M90 Friarton Bridge due to high winds currently affecting driving conditions.
 
 Updated: 23:44]]></description>
-<guid>3</guid>
+<guid>1</guid>
 </item>
 
 <item>
@@ -44,7 +24,7 @@ Updated: 23:44]]></description>
 • Road users are advised to use caution crossing the A876 (Clackmannanshire Bridge) due to high winds currently affecting driving conditions.
 
 Updated: 00:46]]></description>
-<guid>4</guid>
+<guid>2</guid>
 </item>
 
 <item>
@@ -54,7 +34,7 @@ Updated: 00:46]]></description>
 • Road users are advised to use caution crossing the A985 Kincardine Bridge due to high winds currently affecting driving conditions.
 
 Updated: 00:46]]></description>
-<guid>5</guid>
+<guid>3</guid>
 </item>
 
 
