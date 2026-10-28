@@ -8,9 +8,33 @@
 
 
 <item>
-<title>No major incidents reported</title>
-<description>No significant delays currently reported on key Fife routes.</description>
-<guid>fallback</guid>
+<title>A876 and A985 (Southbound)</title>
+<description><![CDATA[🟠 Traffic restriction
+
+• The A876 southbound Clackmannanshire Bridge is closed to allow for essential overnight roadworks.
+
+Updated: 20:24]]></description>
+<guid>1</guid>
+</item>
+
+<item>
+<title>M90 Queensferry (Northbound)</title>
+<description><![CDATA[🟠 Traffic restrictions
+
+• The M9 Northbound, is closed after Junction 1a to allow for essential overnight roadworks
+
+Updated: 21:10]]></description>
+<guid>2</guid>
+</item>
+
+<item>
+<title>A9000 Echline (Northbound)</title>
+<description><![CDATA[🟠 Traffic restriction
+
+• The A9000 Forth Road Bridge, is Closed Northbound to allow for essential overnight roadworks.
+
+Updated: 21:12]]></description>
+<guid>3</guid>
 </item>
 
 
