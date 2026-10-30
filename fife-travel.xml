@@ -8,43 +8,9 @@
 
 
 <item>
-<title>M90 J06 Kinross (Northbound)</title>
-<description><![CDATA[🟠 Traffic restriction
-
-• The M90 is currently closed heading northbound between Junction 5 (Gairney Bridge) and Junction 6 (Kinross), due to planned roadworks in the area. This is also inclusive of the northbound on slip at J5.
-
-Updated: 20:04]]></description>
-<guid>1</guid>
-</item>
-
-<item>
-<title>A977 / A876 (Northbound)</title>
-<description><![CDATA[🟠 Traffic restriction
-
-• The A876 Clackmannanshire Bridge is closed northbound due to overnight roadworks.
-
-Updated: 20:13]]></description>
-<guid>2</guid>
-</item>
-
-<item>
-<title>M90 Masterton (Southbound)</title>
-<description><![CDATA[🟢 Minor traffic restriction
-
-• Access to the M90 Southbound from the A823 junction 2 is closed to allow for essential overnight roadworks.
-
-Updated: 20:14]]></description>
-<guid>3</guid>
-</item>
-
-<item>
-<title>A9000 Forth Road Bridge (Southbound)</title>
-<description><![CDATA[🟠 Traffic restriction
-
-• The A9000 Forth Road Bridge, is currently closed heading southbound, due to planned works on the carriageway.
-
-Updated: 01:01]]></description>
-<guid>4</guid>
+<title>No major incidents reported</title>
+<description>No significant delays currently reported on key Fife routes.</description>
+<guid>fallback</guid>
 </item>
 
 
