@@ -8,43 +8,9 @@
 
 
 <item>
-<title>A90/A92 S'haven W (Southbound)</title>
-<description><![CDATA[🟠 Traffic restriction
-
-• The A90 southbound onslip at Stonehaven is currently closed due to overnight roadworks. A signed diversion is in place.
-
-Updated: 19:22]]></description>
-<guid>1</guid>
-</item>
-
-<item>
-<title>A876 and A985 (Southbound)</title>
-<description><![CDATA[🟠 Traffic restriction
-
-• Due to overnight roadworks the A876 Clackmannanshire Bridge is closed southbound. A signed diversion is in place.
-
-Updated: 20:00]]></description>
-<guid>2</guid>
-</item>
-
-<item>
-<title>M90 Ferrytoll (Northbound)</title>
-<description><![CDATA[🟢 Minor traffic restriction
-
-• The M90 Junction 1B (Ferrytoll Junction) northbound off slip is closed to all traffic, due to overnight roadworks.
-
-Updated: 21:00]]></description>
-<guid>3</guid>
-</item>
-
-<item>
-<title>A9000 Forth Road Bridge (General)</title>
-<description><![CDATA[🟠 Traffic restrictions
-
-• Due to overnight roadworks the A9000 (Forth Road Bridge) is closed to all traffic. A signed diversion is in place.
-
-Updated: 00:05]]></description>
-<guid>4</guid>
+<title>No major incidents reported</title>
+<description>No significant delays currently reported on key Fife routes.</description>
+<guid>fallback</guid>
 </item>
 
 
