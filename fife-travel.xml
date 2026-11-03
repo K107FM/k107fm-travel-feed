@@ -8,13 +8,23 @@
 
 
 <item>
-<title>M90 Queensferry (Southbound)</title>
-<description><![CDATA[🔴 Major traffic restrictions
+<title>A985 / B980 (General)</title>
+<description><![CDATA[🟠 Traffic restriction
 
-• 3 lanes restricted Southbound
+• The A985 is currently closed in both directions between Kings Road and Crossroads Roundabout due to essential roadworks.
 
-Updated: 16:45]]></description>
+Updated: 18:37]]></description>
 <guid>1</guid>
+</item>
+
+<item>
+<title>M90 Ferrytoll (Northbound)</title>
+<description><![CDATA[🟢 Minor traffic restriction
+
+• 1 lane closed Northbound
+
+Updated: 19:45]]></description>
+<guid>2</guid>
 </item>
 
 
