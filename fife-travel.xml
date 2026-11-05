@@ -8,9 +8,23 @@
 
 
 <item>
-<title>No major incidents reported</title>
-<description>No significant delays currently reported on key Fife routes.</description>
-<guid>fallback</guid>
+<title>A985 / B980 (General)</title>
+<description><![CDATA[🟠 Traffic restriction
+
+• The A985 is closed in both direction at Rosyth due to overnight essential roadwork.
+
+Updated: 18:07]]></description>
+<guid>1</guid>
+</item>
+
+<item>
+<title>J8 (General)</title>
+<description><![CDATA[🟠 Traffic restriction
+
+• All lanes restricted in both directions
+
+Updated: 18:43]]></description>
+<guid>2</guid>
 </item>
 
 
