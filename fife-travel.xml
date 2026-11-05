@@ -8,23 +8,9 @@
 
 
 <item>
-<title>A985 / B980 (General)</title>
-<description><![CDATA[🟠 Traffic restriction
-
-• The A985 is currently closed in both directions between Kings Road and Crossroads Roundabout due to essential roadworks.
-
-Updated: 18:22]]></description>
-<guid>1</guid>
-</item>
-
-<item>
-<title>M90 Ferrytoll (Northbound)</title>
-<description><![CDATA[🟠 Traffic restrictions
-
-• The M90 Junction 1B, Ferry Toll On Slip at is closed to all northbound traffic, due to overnight roadworks.
-
-Updated: 20:18]]></description>
-<guid>2</guid>
+<title>No major incidents reported</title>
+<description>No significant delays currently reported on key Fife routes.</description>
+<guid>fallback</guid>
 </item>
 
 
