@@ -8,13 +8,43 @@
 
 
 <item>
-<title>A92/A921 Kirkcaldy (General)</title>
+<title>A876 and A985 (General)</title>
 <description><![CDATA[🟠 Traffic restriction
 
-• A92 Bankhead Roundabout to Redhouse Roundabout is partially blocked due to debris on the carriageway.
+• The A985 at Kincardine Bridge is closed in both directions to allow for essential overnight roadworks.
 
-Updated: 18:10]]></description>
+Updated: 19:20]]></description>
 <guid>1</guid>
+</item>
+
+<item>
+<title>M90 Junction 1A (Northbound)</title>
+<description><![CDATA[🟠 Traffic restrictions
+
+• The M9 Westbound Slip to the M90 Northbound Junction 1 is closed to all traffic due to overnight roadworks.
+
+Updated: 20:45]]></description>
+<guid>2</guid>
+</item>
+
+<item>
+<title>A90/A928 (Southbound)</title>
+<description><![CDATA[🟠 Traffic restriction
+
+• The A90 Southbound off slip and on slip at Gateside is closed to allow for essential overnight roadworks.
+
+Updated: 21:52]]></description>
+<guid>3</guid>
+</item>
+
+<item>
+<title>A985 / A994 (General)</title>
+<description><![CDATA[🟠 Traffic restriction
+
+• The A985 is closed in both directions at Admiralty road due to essential overnight roadworks.
+
+Updated: 22:02]]></description>
+<guid>4</guid>
 </item>
 
 
