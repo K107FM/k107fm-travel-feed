@@ -8,53 +8,23 @@
 
 
 <item>
-<title>M90 B800 Underpass (Southbound)</title>
-<description><![CDATA[🟠 Traffic restrictions
-
-• 2 lanes restricted Southbound
-
-Updated: 08:04]]></description>
-<guid>1</guid>
-</item>
-
-<item>
-<title>M90 Ferrytoll (Northbound)</title>
+<title>M90 Queensferry (Northbound)</title>
 <description><![CDATA[🟠 Traffic restrictions
 
 • 2 lanes restricted Northbound
 
-Updated: 08:01]]></description>
+Updated: 17:31]]></description>
+<guid>1</guid>
+</item>
+
+<item>
+<title>J8 (Northbound)</title>
+<description><![CDATA[🟠 Traffic restriction
+
+• The M90 northbound Junction 8 offslip is currently restricted due to a broken down vehicle.
+
+Updated: 17:00]]></description>
 <guid>2</guid>
-</item>
-
-<item>
-<title>M90 Masterton (Southbound)</title>
-<description><![CDATA[🟠 Traffic restrictions
-
-• The M90 is currently restricted southbound between J2a (Halbeath Interchange) and J2 (Pitreavie Interchange) due to a road traffic incident.
-
-Updated: 07:44]]></description>
-<guid>3</guid>
-</item>
-
-<item>
-<title>A92 Crossgates (Southbound)</title>
-<description><![CDATA[🟠 Traffic restrictions
-
-• 2 lanes restricted Southbound
-
-Updated: 08:05]]></description>
-<guid>4</guid>
-</item>
-
-<item>
-<title>M90 Halbeath (Southbound)</title>
-<description><![CDATA[🟠 Traffic restrictions
-
-• 2 lanes restricted Southbound
-
-Updated: 07:52]]></description>
-<guid>5</guid>
 </item>
 
 
