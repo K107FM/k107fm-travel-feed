@@ -8,9 +8,23 @@
 
 
 <item>
-<title>No major incidents reported</title>
-<description>No significant delays currently reported on key Fife routes.</description>
-<guid>fallback</guid>
+<title>A90/A956 (Westbound)</title>
+<description><![CDATA[🟠 Traffic restriction
+
+• The A956 is currently restricted westbound at Cleanhill Roundabout due to a road traffic incident.
+
+Updated: 19:57]]></description>
+<guid>1</guid>
+</item>
+
+<item>
+<title>M90 / A985 (General)</title>
+<description><![CDATA[🟠 Traffic restriction
+
+• The A985 is currently closed on both directions between Crossroads Roundabout and Admirality Roundabout due to essential overnight roadworks. Motorists are advised to follow the available signed diversion route.
+
+Updated: 20:59]]></description>
+<guid>2</guid>
 </item>
 
 
