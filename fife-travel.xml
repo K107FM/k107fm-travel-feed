@@ -8,33 +8,9 @@
 
 
 <item>
-<title>A92/B921 Glenrothes (Southbound)</title>
-<description><![CDATA[🟠 Traffic restriction
-
-• The A92 Southbound is currently restricted between Bankhead and Preston Roundabout due to a broken down vehicle.
-
-Updated: 18:32]]></description>
-<guid>1</guid>
-</item>
-
-<item>
-<title>A977 / A876 (Northbound)</title>
-<description><![CDATA[🟠 Traffic restriction
-
-• The A876 Clackmannanshire Bridge is currently closed Northbound due to planned overnight roadworks. A signed diversion is in place.
-
-Updated: 20:23]]></description>
-<guid>2</guid>
-</item>
-
-<item>
-<title>M90 Queensferry (Northbound)</title>
-<description><![CDATA[🟠 Traffic restrictions
-
-• The M90 is closed to all northbound traffic after Junction 1A (Queensferry), due to overnight roadworks.
-
-Updated: 22:22]]></description>
-<guid>3</guid>
+<title>No major incidents reported</title>
+<description>No significant delays currently reported on key Fife routes.</description>
+<guid>fallback</guid>
 </item>
 
 
