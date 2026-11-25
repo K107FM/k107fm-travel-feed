@@ -8,33 +8,9 @@
 
 
 <item>
-<title>A977 / A876 (Northbound)</title>
-<description><![CDATA[🟠 Traffic restriction
-
-• The A876 Clackmannanshire Bridge northbound is closed due to essential planned roadworks.  Diversions are in place.
-
-Updated: 19:55]]></description>
-<guid>1</guid>
-</item>
-
-<item>
-<title>M90 Balmanno Hill Bend (Northbound)</title>
-<description><![CDATA[🟠 Traffic restriction
-
-• The M90 Northbound Junction 9 Off Slip to Bridge Of Earn is currently closed due to planned overnight roadworks. A signed diversion is in place.
-
-Updated: 21:25]]></description>
-<guid>2</guid>
-</item>
-
-<item>
-<title>M90 Queensferry (Northbound)</title>
-<description><![CDATA[🟠 Traffic restrictions
-
-• The M90 Northbound is currently closed at Junction 1A due to planned overnight roadworks. A signed diversion is in place.
-
-Updated: 22:08]]></description>
-<guid>3</guid>
+<title>No major incidents reported</title>
+<description>No significant delays currently reported on key Fife routes.</description>
+<guid>fallback</guid>
 </item>
 
 
