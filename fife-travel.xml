@@ -8,13 +8,34 @@
 
 
 <item>
-<title>A9 / B934 (Southbound)</title>
+<title>M90 Junction 1A (Northbound)</title>
+<description><![CDATA[🟠 Traffic restrictions
+
+• The M9 Eastbound J1a Sip to the M90 Northbound is closed to all traffic due to overnight roadworks.
+• The M9 Westbound J1a Slip to the M90 Northbound is closed to all traffic due to overnight roadworks.
+
+Updated: 20:01]]></description>
+<guid>1</guid>
+</item>
+
+<item>
+<title>M90 Scotstoun (Northbound)</title>
 <description><![CDATA[🟠 Traffic restriction
 
-• The A9 is currently restricted southbound at Cairnie Brae due to a broken down vehicle.
+• The A90/M90 Junction 1 Merge is closed to all Northbound traffic due to overnight roadworks.
 
-Updated: 11:08]]></description>
-<guid>1</guid>
+Updated: 20:07]]></description>
+<guid>2</guid>
+</item>
+
+<item>
+<title>M90 Queensferry - Slip Off (Northbound)</title>
+<description><![CDATA[🟠 Traffic restrictions
+
+• The M90 Junction 1A Off Slip is closed to all Northbound traffic due to overnight roadworks.
+
+Updated: 20:10]]></description>
+<guid>3</guid>
 </item>
 
 
